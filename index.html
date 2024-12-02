@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <title>Calculator</title>
+  </head>
+  <body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <div class="w-80 bg-white shadow-lg rounded-lg p-5">
+      <input
+        type="text"
+        id="calcDisplay"
+        disabled
+        class="w-full h-12 mb-4 text-right text-lg font-medium bg-gray-100 border border-gray-300 rounded-lg px-3 focus:outline-none"
+      />
+
+      <div class="grid grid-cols-4 gap-3">
+        <button
+          class="calc-btn bg-gray-200 hover:bg-gray-300 text-black font-medium py-2 rounded"
+          onclick="addValue('7')"
+        >
+          7
+        </button>
+        <button
+          class="calc-btn bg-gray-200 hover:bg-gray-300 text-black font-medium py-2 rounded"
+          onclick="addValue('8')"
+        >
+          8
+        </button>
+        <button
+          class="calc-btn bg-gray-200 hover:bg-gray-300 text-black font-medium py-2 rounded"
+          onclick="addValue('9')"
+        >
+          9
+        </button>
+        <button
+          class="calc-btn bg-red-500 hover:bg-red-600 text-white font-medium py-2 rounded"
+          onclick="clearDisplay()"
+        >
+          C
+        </button>
+
+        <button
+          class="calc-btn bg-gray-200 hover:bg-gray-300 text-black font-medium py-2 rounded"
+          onclick="addValue('4')"
+        >
+          4
+        </button>
+        <button
+          class="calc-btn bg-gray-200 hover:bg-gray-300 text-black font-medium py-2 rounded"
+          onclick="addValue('5')"
+        >
+          5
+        </button>
+        <button
+          class="calc-btn bg-gray-200 hover:bg-gray-300 text-black font-medium py-2 rounded"
+          onclick="addValue('6')"
+        >
+          6
+        </button>
+        <button
+          class="calc-btn bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 rounded"
+          onclick="addValue('/')"
+        >
+          /
+        </button>
+
+        <button
+          class="calc-btn bg-gray-200 hover:bg-gray-300 text-black font-medium py-2 rounded"
+          onclick="addValue('1')"
+        >
+          1
+        </button>
+        <button
+          class="calc-btn bg-gray-200 hover:bg-gray-300 text-black font-medium py-2 rounded"
+          onclick="addValue('2')"
+        >
+          2
+        </button>
+        <button
+          class="calc-btn bg-gray-200 hover:bg-gray-300 text-black font-medium py-2 rounded"
+          onclick="addValue('3')"
+        >
+          3
+        </button>
+        <button
+          class="calc-btn bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 rounded"
+          onclick="addValue('*')"
+        >
+          *
+        </button>
+
+        <button
+          class="calc-btn bg-gray-200 hover:bg-gray-300 text-black font-medium py-2 rounded"
+          onclick="addValue('0')"
+        >
+          0
+        </button>
+        <button
+          class="calc-btn bg-gray-200 hover:bg-gray-300 text-black font-medium py-2 rounded"
+          onclick="addValue('.')"
+        >
+          .
+        </button>
+        <button
+          class="calc-btn bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 rounded"
+          onclick="addValue('-')"
+        >
+          -
+        </button>
+        <button
+          class="calc-btn bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 rounded"
+          onclick="addValue('+')"
+        >
+          +
+        </button>
+
+        <button
+          class="calc-btn col-span-2 bg-green-500 hover:bg-green-600 text-white font-medium py-2 rounded"
+          onclick="computeResult()"
+        >
+          =
+        </button>
+        <button
+          class="calc-btn bg-gray-500 hover:bg-gray-600 text-white font-medium py-2 rounded"
+          onclick="disableCalculator()"
+        >
+          Off
+        </button>
+        <button
+          class="calc-btn bg-gray-500 hover:bg-gray-600 text-white font-medium py-2 rounded"
+          onclick="enableCalculator()"
+        >
+          On
+        </button>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
